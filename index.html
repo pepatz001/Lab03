@@ -1,2 +1,26 @@
-<script src="build/main.bundle.js"></script>
-Hello world!
+<html>
+    <head>
+        <script src="build/main.bundle.js"></script>
+        <style>
+            table, td, th {    
+                border: 1px solid #ddd;
+                text-align: left;
+            }
+            
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+            
+            th, td {
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Beer Search</h2>
+        <input class="search" id="search" placeholder="Search">
+        <button id="searchBtn">Search</button>
+        <div id="beer_table"></div>
+    </body>
+</html>
