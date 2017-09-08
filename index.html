@@ -2,25 +2,41 @@
     <head>
         <script src="build/main.bundle.js"></script>
         <style>
+            body {
+                font-family: "Comic Sans MS", cursive, sans-serif;
+                background-image: url("https://i.pinimg.com/originals/42/99/ed/4299ed113d27d184a60674cd5d7ea474.jpg");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-attachment: fixed;
+                background-position: center; 
+            }
             table, td, th {    
                 border: 1px solid #ddd;
                 text-align: left;
+                background-color: rgba(255, 255, 255, 0.3)
             }
             
             table {
                 border-collapse: collapse;
-                width: 100%;
+                width: 80%;
+                margin: 30px auto auto auto;
             }
             
             th, td {
                 padding: 10px;
             }
+            input ,button{
+                padding: 10px;
+                font-family: "Comic Sans MS", cursive, sans-serif;
+            }
         </style>
     </head>
     <body>
-        <h2>Beer Search</h2>
-        <input class="search" id="search" placeholder="Search">
-        <button id="searchBtn">Search</button>
+        <h2 style="color: white;width: 100%;text-align: center;">Beer Search</h2>
+        <div style="width: 100%;text-align: center;margin :10px;">
+            <input class="search" id="search" placeholder="Search">
+            <button id="searchBtn">Search</button>
+        </div>
         <div id="beer_table"></div>
     </body>
 </html>
